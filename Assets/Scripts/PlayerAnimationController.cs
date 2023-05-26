@@ -16,7 +16,14 @@ public class PlayerAnimationController : MonoBehaviour
 
         // (EJ) Lanza una excepcion del tipo 'ForgotToAddComponentException' si pm es null y destruye
         // este componente para evitar errores
-        
+
+        if (pm == null)
+        {
+            throw new ForgotToAddComponentException();
+            
+            
+        }
+
     }
 
     // Update is called once per frame
